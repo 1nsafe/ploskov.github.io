@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="../metro/css/metro-all.css?ver=@@b-version" rel="stylesheet">
+
+    <title>Pages 5</title>
+    <style>
+        body {
+        height: 100%;
+            }
+        footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        background: #666
+        }
+        h2{
+        font-size:20px;
+            }
+        h1{
+        font-size:40px;
+        }
+
+    </style>
+    
+</head>
+<body class="m4-cloak">
+<div class="container">
+    <h1>JSON и работа с ним различными языками программирования</h1>
+
+    <div class="example">
+        <div class="text-center p-10" style='background: blue;'>
+            <a href="index.html" class="button" onclick="openTabByTarget('#home')" >Home</a>
+            <a href="navview1.html" class="button" onclick="openTabByTarget('#links')" >pages 1</a>
+            <a href="navview2.html" class="button" onclick="openTabByTarget('#links')" >pages 2</a>
+            <a href="navview3.html" class="button" onclick="openTabByTarget('#links')" >pages 3</a>
+            <a href="navview4.html" class="button" onclick="openTabByTarget('#links')" >pages 4</a>
+            <a href="navview5.html" class="button" onclick="openTabByTarget('#links')" >pages 5</a>
+        </div>
+        <ul
+                id="tabs"
+                data-role="tabs"
+                data-expand="true"
+                data-cls-tabs-list-item-active="fg-orange"
+                data-on-tab="console.log('tab', arguments)"
+                data-on-tab-close="console.log('close', arguments)"
+                data-on-tab-open="console.log('open', arguments)"
+                data-update-uri="true"
+        /ul>
+    </div>
+    <h1>Sidebar</h1>
+
+    <div class="example h-vh-100">
+        <div id="navview" data-role="navview" data-compact="md" data-expand="lg" data-toggle="#pane-toggle" data-active-state="true" style="overflow: visible;">
+            <nav class="navview-pane">
+                <button class="pull-button">
+                    <span class="mif-menu"></span>
+                </button>
+                <ul class="navview-menu">
+            
+                    <li class="item-separator"></li>
+
+                    <li class="item-header">Main pages</li>
+
+                    <li>
+                        <a href="#">
+                            <a href="navview1.html" style='background: skyblue;' class="caption">1 pages</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <a href="navview2.html" style='background: skyblue;' class="caption">2 pages</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <a href="navview3.html" style='background: skyblue;' class="caption">3 pages</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <a href="navview4.html" style='background: skyblue;' class="caption">4 pages</a>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <a href="navview5.html" style='background: skyblue;' class="caption">5 pages</a>
+                        </a>
+                    </li>
+            </nav>
+
+            <div class="navview-content pl-4-md pr-4-md">
+                <h1>
+                    <button id="pane-toggle" class="button square d-none-md"><span class="mif-menu"></span></button>
+                    Работа с JSON в PHP
+                    <p>Кодирование</p>
+                    <img src="../images/9.png">
+                    <p>Декодирование</p>
+                    <img src="../images/10.png">
+                    <p>HTTP-запросы в формате JSON</p>
+                    <img src="../images/11.png">
+                </h1>
+                <p>
+                    
+                </p>
+                <button onclick="Metro.getPlugin('#navview', 'navview').pullClick(this)" class="button">Close menu</button>
+
+            </div>
+        </div>
+    </div>
+
+<script src="../metro/js/metro.js?ver=@@b-version"></script>
+<script>
+</script>
+<div class="footer" style="top: 130px; background: #666">
+  <p>© Ploskov Anton</p>
+</div>
+</body>
+</html>
